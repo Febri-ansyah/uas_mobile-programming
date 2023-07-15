@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Izo Novel</string>
+    <string name="login_first_name">First Name</string>
+    <string name="login_last_name">Last Name</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="biodata_header">Form Biodata</string>
+    <string name="title_favorite">Novel Favorite</string>
+    <string name="title_daftar_novel">Daftar Novel</string>
+    <string-array name="option_agama">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Katolik</item>
+    </string-array>
+</resources>

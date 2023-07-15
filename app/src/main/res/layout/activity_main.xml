@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-120dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:text="tes"/>
+
+                <Button
+                    android:id="@+id/btn_sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN OUT"/>
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Main Menu"/>
+
+                <LinearLayout
+                    android:id="@+id/menu_one"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="4"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:textColor="@color/black"
+                            android:background="@color/purple_200"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/daftar_novel"
+                            android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Daftr Novel"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/text_sub"
+                            android:layout_width="match_parent"
+                            android:text="see yor list of novel"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="4"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@color/text_header"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvInputNovel"
+                            android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Input Novel"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/text_sub"
+                            android:layout_width="match_parent"
+                            android:text="add a new novel"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="4"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:textColor="@color/black"
+                            android:background="@color/box_one"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/informasi_pengguna"
+                            android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Informasi pengguna"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/text_sub"
+                            android:layout_width="match_parent"
+                            android:text="change or modify account"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Novel  favorite"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@color/text_header_two"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Terbaik menurut pembaca"
+                        android:layout_weight="1"
+                        android:textColor="@color/text_sub"/>
+                    <TextView
+                        android:id="@+id/favorite_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:layout_weight="3"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_header_two"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:background="@color/box_one"
+                android:paddingBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/purple_700"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Judul novel ini judul"
+                        android:textColor="@color/text_sub"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/text_header"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Judul novel ini judul"
+                        android:textColor="@color/text_sub"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/purple_200"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Judul novel ini judul"
+                        android:textColor="@color/text_sub"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_height="200dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/splash_bg"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="7dp"
+                        android:text="Judul novel ini judul"
+                        android:textColor="@color/text_sub"/>
+                </LinearLayout>
+
+            </LinearLayout>
+</HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
