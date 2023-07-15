@@ -1,9 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailNovelActivity">
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:layout_marginLeft="105dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="#393772"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#393772"
+            android:text="Menanti Hari Berganti"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#E2F8F0"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Pengarang"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="Nama Pengarang"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#E2F8F0"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Penerbit"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="Nama Penerbit"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#E2F8F0"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Tahun Terbit"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="YYYY"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#E2F8F0"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Genre Novel"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:text="Genre Novel"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#CCF29B"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_baseline_red_eye"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="65k Dibaca"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_baseline_list"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="65k Disukai"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_label"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="20k Ulasan"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Kiera tidak punya target untuk hidupnya, terutama untuk urusan asmara. Dia punya trauma mendalam yang sulit untuk dilupakan. Jadi dia hanya menjalani hari demi hari dengan melakukan pekerjaan yang dia sukai, dan nongkrong dengan sahabat-sahabatnya setiap kali mereka punya waktu luang untuk berkumpul.."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Kiera tidak punya target untuk hidupnya, terutama untuk urusan asmara. Dia punya trauma mendalam yang sulit untuk dilupakan. Jadi dia hanya menjalani hari demi hari dengan melakukan pekerjaan yang dia sukai, dan nongkrong dengan sahabat-sahabatnya setiap kali mereka punya waktu luang untuk berkumpul.."
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#0000bb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
